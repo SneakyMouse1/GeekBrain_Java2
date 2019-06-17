@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:controller="gb.chat.client.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea fx:id="chatArea" editable="false" VBox.vgrow="ALWAYS"/>
+    <HBox>
+        <TextField fx:id="msgField" HBox.hgrow="ALWAYS" promptText="Write your message..." onAction="#sendMsg"/>
+        <Button text="SEND" onAction="#sendMsg"/>
+    </HBox>
+</VBox>
